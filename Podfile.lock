@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (5.4.3)
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - IQKeyboardManager (6.5.6)
+  - Keys (1.0.1)
+  - QuickLayout (3.0.0)
+  - SkeletonView (1.21.2)
+  - SwiftEntryKit (1.2.7):
+    - QuickLayout (= 3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.4.3)
+  - FlagPhoneNumber (= 0.8.0)
+  - IQKeyboardManager (= 6.5.6)
+  - Keys (from `Pods/CocoaPodsKeys`)
+  - SkeletonView (= 1.21.2)
+  - SwiftEntryKit (= 1.2.7)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FlagPhoneNumber
+    - IQKeyboardManager
+    - QuickLayout
+    - SkeletonView
+    - SwiftEntryKit
+
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  SkeletonView: a085533443fed0198309f1979780afb6e80eaedd
+  SwiftEntryKit: 537c92699d6034efb1ef9c32b11e0b37c97aa589
+
+PODFILE CHECKSUM: 8f98101fd796f2ac685e37cfae94969c1da38702
+
+COCOAPODS: 1.10.1

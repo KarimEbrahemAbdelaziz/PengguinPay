@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153F3A05532FD026967AC2E3 /* Pods_PenguinPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F79D3D2A716025AAA078457 /* Pods_PenguinPay.framework */; };
+		BC6292BE26B9B51E00C81AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6292BD26B9B51E00C81AB0 /* AppDelegate.swift */; };
+		BC6292C726B9B52000C81AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6292C626B9B52000C81AB0 /* Assets.xcassets */; };
+		BC6292CA26B9B52000C81AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6292C826B9B52000C81AB0 /* LaunchScreen.storyboard */; };
+		BC6292DC26B9B7DD00C81AB0 /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6292DB26B9B7DD00C81AB0 /* ApplicationService.swift */; };
+		BC6292E026B9B80300C81AB0 /* CompositeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6292DF26B9B80300C81AB0 /* CompositeAppDelegate.swift */; };
+		BC6292E326B9B90C00C81AB0 /* AppDelegateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6292E226B9B90C00C81AB0 /* AppDelegateFactory.swift */; };
+		BC6292E826B9B96900C81AB0 /* NetworkReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6292E726B9B96900C81AB0 /* NetworkReachabilityService.swift */; };
+		BC6292EF26B9BD6F00C81AB0 /* ExchangeRatesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6292EE26B9BD6F00C81AB0 /* ExchangeRatesRoute.swift */; };
+		BC6292FD26B9C2DA00C81AB0 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6292FC26B9C2DA00C81AB0 /* ExchangeRateRequest.swift */; };
+		BCDFB0EE26B9DB8200CD0242 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB0ED26B9DB8200CD0242 /* ExchangeRates.swift */; };
+		BCDFB0F426B9DC3F00CD0242 /* NoInternetConnectionEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDFB0F326B9DC3F00CD0242 /* NoInternetConnectionEntry.xib */; };
+		BCDFB0F726B9DC5000CD0242 /* NoInternetConnectionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB0F626B9DC5000CD0242 /* NoInternetConnectionEntry.swift */; };
+		BCDFB0FC26BADA9500CD0242 /* SendMoneyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB0FB26BADA9500CD0242 /* SendMoneyInteractor.swift */; };
+		BCDFB10026BADA9F00CD0242 /* SendMoneyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB0FF26BADA9F00CD0242 /* SendMoneyPresenter.swift */; };
+		BCDFB10326BADAAD00CD0242 /* SendMoneySceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB10226BADAAD00CD0242 /* SendMoneySceneConfigurator.swift */; };
+		BCDFB10B26BADAED00CD0242 /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB10926BADAED00CD0242 /* SendMoneyViewController.swift */; };
+		BCDFB10C26BADAED00CD0242 /* SendMoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDFB10A26BADAED00CD0242 /* SendMoneyViewController.xib */; };
+		BCDFB12826BC340E00CD0242 /* MainEntryPointService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB12726BC340E00CD0242 /* MainEntryPointService.swift */; };
+		BCDFB17526BC39F000CD0242 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB17426BC39F000CD0242 /* CurrencyTextField.swift */; };
+		BCDFB17F26BC524A00CD0242 /* SupportedContriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB17E26BC524A00CD0242 /* SupportedContriesRepository.swift */; };
+		BCDFB18326BC610800CD0242 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB18226BC610800CD0242 /* Country.swift */; };
+		BCDFB18626BC62EC00CD0242 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB18526BC62EC00CD0242 /* Currency.swift */; };
+		BCDFB1A426BC8A6D00CD0242 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB1A326BC8A6D00CD0242 /* CGRect+Extensions.swift */; };
+		BCDFB1A826BC8A8900CD0242 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB1A726BC8A8900CD0242 /* UIScreen+Extensions.swift */; };
+		BCDFB1AB26BC8A9D00CD0242 /* NSDObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB1AA26BC8A9D00CD0242 /* NSDObject+Extensions.swift */; };
+		BCDFB1AE26BC8AB600CD0242 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB1AD26BC8AB600CD0242 /* UIView+Extensions.swift */; };
+		BCDFB1B226BC8AE200CD0242 /* SendSuccessEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFB1B126BC8AE200CD0242 /* SendSuccessEntry.swift */; };
+		BCDFB1B626BC8AF400CD0242 /* SendSuccessEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDFB1B526BC8AF400CD0242 /* SendSuccessEntry.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2ACA764C1D69783EE23CD475 /* Pods-PenguinPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenguinPay.release.xcconfig"; path = "Target Support Files/Pods-PenguinPay/Pods-PenguinPay.release.xcconfig"; sourceTree = "<group>"; };
+		5F79D3D2A716025AAA078457 /* Pods_PenguinPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PenguinPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6292BA26B9B51E00C81AB0 /* PenguinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6292BD26B9B51E00C81AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC6292C626B9B52000C81AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC6292C926B9B52000C81AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC6292CB26B9B52000C81AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6292DB26B9B7DD00C81AB0 /* ApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
+		BC6292DF26B9B80300C81AB0 /* CompositeAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegate.swift; sourceTree = "<group>"; };
+		BC6292E226B9B90C00C81AB0 /* AppDelegateFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateFactory.swift; sourceTree = "<group>"; };
+		BC6292E726B9B96900C81AB0 /* NetworkReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityService.swift; sourceTree = "<group>"; };
+		BC6292EE26B9BD6F00C81AB0 /* ExchangeRatesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesRoute.swift; sourceTree = "<group>"; };
+		BC6292FC26B9C2DA00C81AB0 /* ExchangeRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequest.swift; sourceTree = "<group>"; };
+		BCDFB0ED26B9DB8200CD0242 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
+		BCDFB0F326B9DC3F00CD0242 /* NoInternetConnectionEntry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoInternetConnectionEntry.xib; sourceTree = "<group>"; };
+		BCDFB0F626B9DC5000CD0242 /* NoInternetConnectionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetConnectionEntry.swift; sourceTree = "<group>"; };
+		BCDFB0FB26BADA9500CD0242 /* SendMoneyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyInteractor.swift; sourceTree = "<group>"; };
+		BCDFB0FF26BADA9F00CD0242 /* SendMoneyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyPresenter.swift; sourceTree = "<group>"; };
+		BCDFB10226BADAAD00CD0242 /* SendMoneySceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneySceneConfigurator.swift; sourceTree = "<group>"; };
+		BCDFB10926BADAED00CD0242 /* SendMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
+		BCDFB10A26BADAED00CD0242 /* SendMoneyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendMoneyViewController.xib; sourceTree = "<group>"; };
+		BCDFB12726BC340E00CD0242 /* MainEntryPointService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntryPointService.swift; sourceTree = "<group>"; };
+		BCDFB17426BC39F000CD0242 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		BCDFB17E26BC524A00CD0242 /* SupportedContriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedContriesRepository.swift; sourceTree = "<group>"; };
+		BCDFB18226BC610800CD0242 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		BCDFB18526BC62EC00CD0242 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		BCDFB1A326BC8A6D00CD0242 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		BCDFB1A726BC8A8900CD0242 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		BCDFB1AA26BC8A9D00CD0242 /* NSDObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDObject+Extensions.swift"; sourceTree = "<group>"; };
+		BCDFB1AD26BC8AB600CD0242 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BCDFB1B126BC8AE200CD0242 /* SendSuccessEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSuccessEntry.swift; sourceTree = "<group>"; };
+		BCDFB1B526BC8AF400CD0242 /* SendSuccessEntry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendSuccessEntry.xib; sourceTree = "<group>"; };
+		D0DF3576E2CF8EF7BC5FCB7A /* Pods-PenguinPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenguinPay.debug.xcconfig"; path = "Target Support Files/Pods-PenguinPay/Pods-PenguinPay.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC6292B726B9B51E00C81AB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153F3A05532FD026967AC2E3 /* Pods_PenguinPay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E2CCC5346C4BD8D86D72536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F79D3D2A716025AAA078457 /* Pods_PenguinPay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0FEB005D16F0D17F0EE5DE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0DF3576E2CF8EF7BC5FCB7A /* Pods-PenguinPay.debug.xcconfig */,
+				2ACA764C1D69783EE23CD475 /* Pods-PenguinPay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC6292B126B9B51E00C81AB0 = {
+			isa = PBXGroup;
+			children = (
+				BC6292BC26B9B51E00C81AB0 /* PenguinPay */,
+				BC6292BB26B9B51E00C81AB0 /* Products */,
+				B0FEB005D16F0D17F0EE5DE0 /* Pods */,
+				5E2CCC5346C4BD8D86D72536 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC6292BB26B9B51E00C81AB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC6292BA26B9B51E00C81AB0 /* PenguinPay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC6292BC26B9B51E00C81AB0 /* PenguinPay */ = {
+			isa = PBXGroup;
+			children = (
+				BC6292E526B9B92800C81AB0 /* Application */,
+				BCDFB0EC26B9DB6000CD0242 /* Entities */,
+				BC6292EC26B9BC4A00C81AB0 /* Network */,
+				BCDFB0F126B9DC0A00CD0242 /* Modules */,
+				BCDFB19E26BC825F00CD0242 /* Assets */,
+				BC6292C826B9B52000C81AB0 /* LaunchScreen.storyboard */,
+			);
+			path = PenguinPay;
+			sourceTree = "<group>";
+		};
+		BC6292DA26B9B7C900C81AB0 /* CompositeAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BC6292DB26B9B7DD00C81AB0 /* ApplicationService.swift */,
+				BC6292DF26B9B80300C81AB0 /* CompositeAppDelegate.swift */,
+				BC6292E226B9B90C00C81AB0 /* AppDelegateFactory.swift */,
+			);
+			path = CompositeAppDelegate;
+			sourceTree = "<group>";
+		};
+		BC6292E526B9B92800C81AB0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC6292E626B9B93D00C81AB0 /* Services */,
+				BC6292DA26B9B7C900C81AB0 /* CompositeAppDelegate */,
+				BC6292BD26B9B51E00C81AB0 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BC6292E626B9B93D00C81AB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC6292E726B9B96900C81AB0 /* NetworkReachabilityService.swift */,
+				BCDFB12726BC340E00CD0242 /* MainEntryPointService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BC6292EC26B9BC4A00C81AB0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BC6292EE26B9BD6F00C81AB0 /* ExchangeRatesRoute.swift */,
+				BC6292FC26B9C2DA00C81AB0 /* ExchangeRateRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCDFB0EC26B9DB6000CD0242 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB0ED26B9DB8200CD0242 /* ExchangeRates.swift */,
+				BCDFB18226BC610800CD0242 /* Country.swift */,
+				BCDFB18526BC62EC00CD0242 /* Currency.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BCDFB0F126B9DC0A00CD0242 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB0F926BADA5200CD0242 /* SendMoney */,
+				BCDFB0F226B9DC2300CD0242 /* Common */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BCDFB0F226B9DC2300CD0242 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB1A226BC8A6000CD0242 /* Extensions */,
+				BCDFB17D26BC523800CD0242 /* Repositories */,
+				BCDFB17226BC39D400CD0242 /* CustomViews */,
+				BCDFB17126BC39CA00CD0242 /* Entries */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BCDFB0F926BADA5200CD0242 /* SendMoney */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB1B026BC8AD100CD0242 /* SentSuccessEntry */,
+				BCDFB0FA26BADA6900CD0242 /* View */,
+				BCDFB0FB26BADA9500CD0242 /* SendMoneyInteractor.swift */,
+				BCDFB0FF26BADA9F00CD0242 /* SendMoneyPresenter.swift */,
+				BCDFB10226BADAAD00CD0242 /* SendMoneySceneConfigurator.swift */,
+			);
+			path = SendMoney;
+			sourceTree = "<group>";
+		};
+		BCDFB0FA26BADA6900CD0242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB10926BADAED00CD0242 /* SendMoneyViewController.swift */,
+				BCDFB10A26BADAED00CD0242 /* SendMoneyViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCDFB17126BC39CA00CD0242 /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB17826BC39F700CD0242 /* NoInternetConnection */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		BCDFB17226BC39D400CD0242 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB17326BC39E100CD0242 /* CurrencyTextField */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		BCDFB17326BC39E100CD0242 /* CurrencyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB17426BC39F000CD0242 /* CurrencyTextField.swift */,
+			);
+			path = CurrencyTextField;
+			sourceTree = "<group>";
+		};
+		BCDFB17826BC39F700CD0242 /* NoInternetConnection */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB0F326B9DC3F00CD0242 /* NoInternetConnectionEntry.xib */,
+				BCDFB0F626B9DC5000CD0242 /* NoInternetConnectionEntry.swift */,
+			);
+			path = NoInternetConnection;
+			sourceTree = "<group>";
+		};
+		BCDFB17D26BC523800CD0242 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB17E26BC524A00CD0242 /* SupportedContriesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BCDFB19E26BC825F00CD0242 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BC6292CB26B9B52000C81AB0 /* Info.plist */,
+				BC6292C626B9B52000C81AB0 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BCDFB1A226BC8A6000CD0242 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB1A326BC8A6D00CD0242 /* CGRect+Extensions.swift */,
+				BCDFB1A726BC8A8900CD0242 /* UIScreen+Extensions.swift */,
+				BCDFB1AA26BC8A9D00CD0242 /* NSDObject+Extensions.swift */,
+				BCDFB1AD26BC8AB600CD0242 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BCDFB1B026BC8AD100CD0242 /* SentSuccessEntry */ = {
+			isa = PBXGroup;
+			children = (
+				BCDFB1B126BC8AE200CD0242 /* SendSuccessEntry.swift */,
+				BCDFB1B526BC8AF400CD0242 /* SendSuccessEntry.xib */,
+			);
+			path = SentSuccessEntry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC6292B926B9B51E00C81AB0 /* PenguinPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6292CE26B9B52000C81AB0 /* Build configuration list for PBXNativeTarget "PenguinPay" */;
+			buildPhases = (
+				83A64F95F685651D726E577D /* [CP] Check Pods Manifest.lock */,
+				BC6292B626B9B51E00C81AB0 /* Sources */,
+				BC6292B726B9B51E00C81AB0 /* Frameworks */,
+				BC6292B826B9B51E00C81AB0 /* Resources */,
+				3969F335F330694FA74D0048 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PenguinPay;
+			productName = PenguinPay;
+			productReference = BC6292BA26B9B51E00C81AB0 /* PenguinPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC6292B226B9B51E00C81AB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BC6292B926B9B51E00C81AB0 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BC6292B526B9B51E00C81AB0 /* Build configuration list for PBXProject "PenguinPay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC6292B126B9B51E00C81AB0;
+			productRefGroup = BC6292BB26B9B51E00C81AB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC6292B926B9B51E00C81AB0 /* PenguinPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC6292B826B9B51E00C81AB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6292CA26B9B52000C81AB0 /* LaunchScreen.storyboard in Resources */,
+				BC6292C726B9B52000C81AB0 /* Assets.xcassets in Resources */,
+				BCDFB0F426B9DC3F00CD0242 /* NoInternetConnectionEntry.xib in Resources */,
+				BCDFB10C26BADAED00CD0242 /* SendMoneyViewController.xib in Resources */,
+				BCDFB1B626BC8AF400CD0242 /* SendSuccessEntry.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3969F335F330694FA74D0048 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PenguinPay/Pods-PenguinPay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PenguinPay/Pods-PenguinPay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PenguinPay/Pods-PenguinPay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83A64F95F685651D726E577D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PenguinPay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC6292B626B9B51E00C81AB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6292DC26B9B7DD00C81AB0 /* ApplicationService.swift in Sources */,
+				BC6292E826B9B96900C81AB0 /* NetworkReachabilityService.swift in Sources */,
+				BC6292E026B9B80300C81AB0 /* CompositeAppDelegate.swift in Sources */,
+				BCDFB1AB26BC8A9D00CD0242 /* NSDObject+Extensions.swift in Sources */,
+				BCDFB10026BADA9F00CD0242 /* SendMoneyPresenter.swift in Sources */,
+				BCDFB0EE26B9DB8200CD0242 /* ExchangeRates.swift in Sources */,
+				BC6292FD26B9C2DA00C81AB0 /* ExchangeRateRequest.swift in Sources */,
+				BCDFB1A426BC8A6D00CD0242 /* CGRect+Extensions.swift in Sources */,
+				BCDFB17F26BC524A00CD0242 /* SupportedContriesRepository.swift in Sources */,
+				BCDFB12826BC340E00CD0242 /* MainEntryPointService.swift in Sources */,
+				BCDFB1AE26BC8AB600CD0242 /* UIView+Extensions.swift in Sources */,
+				BCDFB0F726B9DC5000CD0242 /* NoInternetConnectionEntry.swift in Sources */,
+				BCDFB1B226BC8AE200CD0242 /* SendSuccessEntry.swift in Sources */,
+				BCDFB18626BC62EC00CD0242 /* Currency.swift in Sources */,
+				BCDFB18326BC610800CD0242 /* Country.swift in Sources */,
+				BCDFB0FC26BADA9500CD0242 /* SendMoneyInteractor.swift in Sources */,
+				BC6292BE26B9B51E00C81AB0 /* AppDelegate.swift in Sources */,
+				BCDFB10326BADAAD00CD0242 /* SendMoneySceneConfigurator.swift in Sources */,
+				BC6292E326B9B90C00C81AB0 /* AppDelegateFactory.swift in Sources */,
+				BC6292EF26B9BD6F00C81AB0 /* ExchangeRatesRoute.swift in Sources */,
+				BCDFB1A826BC8A8900CD0242 /* UIScreen+Extensions.swift in Sources */,
+				BCDFB10B26BADAED00CD0242 /* SendMoneyViewController.swift in Sources */,
+				BCDFB17526BC39F000CD0242 /* CurrencyTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC6292C826B9B52000C81AB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6292C926B9B52000C81AB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC6292CC26B9B52000C81AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC6292CD26B9B52000C81AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC6292CF26B9B52000C81AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0DF3576E2CF8EF7BC5FCB7A /* Pods-PenguinPay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H29TMDZK24;
+				INFOPLIST_FILE = PenguinPay/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karimebrahem.PenguinPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC6292D026B9B52000C81AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ACA764C1D69783EE23CD475 /* Pods-PenguinPay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H29TMDZK24;
+				INFOPLIST_FILE = PenguinPay/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karimebrahem.PenguinPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC6292B526B9B51E00C81AB0 /* Build configuration list for PBXProject "PenguinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6292CC26B9B52000C81AB0 /* Debug */,
+				BC6292CD26B9B52000C81AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6292CE26B9B52000C81AB0 /* Build configuration list for PBXNativeTarget "PenguinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6292CF26B9B52000C81AB0 /* Debug */,
+				BC6292D026B9B52000C81AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC6292B226B9B51E00C81AB0 /* Project object */;
+}
