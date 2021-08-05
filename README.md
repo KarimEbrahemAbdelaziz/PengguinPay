@@ -40,9 +40,9 @@ currency at current market rates. As Binarian Dollars are pegged to US Dollars, 
  
  ## Libraries
  
- 1. Alamofire for networking and network reachability.
- 2. Cocoapods-Keys for saving keys.
- 3. IQKeyboardManager for managing keyboard automatically. 
- 4. FlagPhoneNumber for phone number text field with flags.
- 5. SwiftEntryKit for awesome and fully customized popups.
- 6. SkeletonView for cool loading indication.
+ 1. `Alamofire` for networking and network reachability.
+ 2. `Cocoapods-Keys` for saving keys.
+ 3. `IQKeyboardManager` for managing keyboard automatically. 
+ 4. `FlagPhoneNumber` for phone number text field with flags.
+ 5. `SwiftEntryKit` for awesome and fully customized popups.
+ 6. `SkeletonView` for cool loading indication.
