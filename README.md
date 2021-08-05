@@ -32,7 +32,7 @@ currency at current market rates. As Binarian Dollars are pegged to US Dollars, 
  3. While installing `Cocoapods` you'll be asked for `openexchangerates` AppId, please enter yours or use this for testing purposes, `d367f022b0a24af092ba471aa4187a83`.
  4. Open the project with Xcode
  5. Run the project
- 6. Check the Emulator or your real device
+ 6. Check the Simulator or your real device
 
 ## The App Architecture
 
@@ -40,5 +40,9 @@ currency at current market rates. As Binarian Dollars are pegged to US Dollars, 
  
  ## Libraries
  
- 1. Alamofire for networking and network reachability
- 2. Cocoapods-Keys for saving keys
+ 1. Alamofire for networking and network reachability.
+ 2. Cocoapods-Keys for saving keys.
+ 3. IQKeyboardManager for managing keyboard automatically. 
+ 4. FlagPhoneNumber for phone number text field with flags.
+ 5. SwiftEntryKit for awesome and fully customized popups.
+ 6. SkeletonView for cool loading indication.
